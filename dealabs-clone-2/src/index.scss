@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+    font-family: "Averta";
+    src: url("./assets/font/AvertaCY-Regular.woff2");
+}
+
+@font-face {
+    font-family: "AvertaSemiBold";
+    src: url("./assets/font/AvertaCY-Semibold.woff2");
+}
+
+:root {
+    --main-bg-color: brown;
+    --secondary-bg-color: rgb(78, 78, 78);
+    --third-bg-color:#03a5c1;
+
+    --primary-navbar-color: #35373b;
+    --secondary-navbar-color: #1d1f20;
+    
+    --main-font-family: 'Averta', sans-serif;
+    --main-font-family-bold:'AvertaSemiBold', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
