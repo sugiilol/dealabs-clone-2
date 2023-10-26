@@ -2,11 +2,10 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
     height: 3.5em;
     width: 100%;
     background-color: var(--primary-navbar-color);
-
+    
     button {
         display: flex;
         align-items: center;
@@ -20,25 +19,34 @@
         border: 0px solid black;
     }
 
-    .navbar-left-part{
+    .navbar-left-part {
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: flex-end;
-        width: 100%;    
-        
-        img {
-            height: 30px;
+        width: 100%;
+
+        .navbar-first-item {
+            color: #03a5c1;
         }
-    
+
+        .navbar-first-item:hover {
+            color: white;
+        }
+
+        img {
+            height: 25px;
+        }
+
         ul {
             display: flex;
             align-items: center;
-            gap: 10px;
             flex-direction: row;
             list-style: none;
-            margin-right: 5%;
-    
+            margin-right: 10%;
+            gap: 10px;
+            padding-left: 10px;
+
             li {
                 a {
                     display: flex;
@@ -46,23 +54,26 @@
                     font-size: .875rem;
                     text-decoration: none;
                     color: rgb(221, 219, 219);
+                    white-space: nowrap;
                 }
-    
+
                 a:hover {
                     color: white;
                 }
             }
-    
-            button{
+
+            button {
                 background-color: var(--primary-navbar-color);
                 color: rgb(221, 219, 219);
+                padding: 5px;
+                white-space: nowrap;
             }
-    
-            button:hover{
+
+            button:hover {
                 background-color: rgb(99, 99, 99);
                 color: white;
                 transition: 0.2s;
-            }   
+            }
         }
 
         .vanish-appear-menu {
@@ -73,24 +84,26 @@
             .vanish-appear-menu {
                 display: block;
             }
-    
+
             .vanish-appear-list {
                 display: none;
             }
         }
-    
+
         @media screen and (max-width: 767px) {
             .vanish-appear-menu {
                 display: none;
             }
         }
-        
+
     }
-    .navbar-right-part{
+
+    .navbar-right-part {
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: flex-start;
+        gap: 10px;
         width: 100%;
 
         .navbar-search {
@@ -105,41 +118,71 @@
                 padding-left: 40px;
                 border-color: transparent;
             }
-        
+
             input:focus {
                 outline: none;
                 transition: 0.2s;
                 border: 1px solid white;
                 box-shadow: 0 0 0 5px #03a5c1;
             }
-        
+
             input::placeholder {
                 color: rgb(128, 128, 128);
             }
-         
+
             span {
-                position: absolute;          
+                position: absolute;
                 margin-left: 10px;
                 margin-top: 10px;
                 color: rgb(153, 153, 153);
             }
+
+            .navbar-search-icon {
+                margin: 5px;
+            }
         }
-    
+
         .connexion-button {
             background-color: var(--secondary-bg-color);
             margin-left: 50px;
         }
+
         .connexion-button:hover {
             background-color: rgb(110, 110, 110);
             transition: 0.2s;
         }
-    
+
         .post-button {
             background-color: var(--third-bg-color);
         }
+
         .post-button:hover {
             background-color: #4ebbce;
             transition: 0.2s;
         }
-    }   
+    }
+
+    @media screen and (max-width: 1149px){
+
+        .navbar-right-part{
+            justify-content: flex-end;
+
+            .vanish-action{
+                display:none;
+            }
+
+            .connexion-button{
+                width: 36px;
+            }
+    
+            .post-button{
+                width: 36px;
+                margin-right: 10px;
+            }
+
+            input{
+                width: 100%;
+            }
+        }
+    }
 }
