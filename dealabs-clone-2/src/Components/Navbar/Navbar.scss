@@ -5,7 +5,7 @@
     height: 3.5em;
     width: 100%;
     background-color: var(--primary-navbar-color);
-    
+
     button {
         display: flex;
         align-items: center;
@@ -25,6 +25,10 @@
         flex-direction: row;
         justify-content: flex-end;
         width: 100%;
+
+        .material-symbols-outlined {
+            height: 19px;
+        }
 
         .navbar-first-item {
             color: #03a5c1;
@@ -81,6 +85,7 @@
         }
 
         @media screen and (max-width: 1023px) {
+
             .vanish-appear-menu {
                 display: block;
             }
@@ -98,6 +103,14 @@
 
     }
 
+    @media screen and (max-width: 1023px) {
+
+        .navbar-left-part {
+            justify-content: flex-start;
+            margin-left: 10px;
+        }
+    }
+
     .navbar-right-part {
         display: flex;
         align-items: center;
@@ -109,13 +122,13 @@
         .navbar-search {
 
             input {
-                border-radius: 30px;
-                width: 100%;
+                width: 300px;
                 height: 28px;
                 font-family: var(--main-font-family);
                 font-size: .875rem;
                 line-height: 1.25rem;
                 padding-left: 40px;
+                border-radius: 30px;
                 border-color: transparent;
             }
 
@@ -144,43 +157,45 @@
 
         .connexion-button {
             background-color: var(--secondary-bg-color);
-            margin-left: 50px;
         }
 
         .connexion-button:hover {
             background-color: rgb(110, 110, 110);
-            transition: 0.2s;
+            box-shadow: 0 0 0 1px rgb(110, 110, 110);
+            transition: 0.5s;
         }
 
         .post-button {
             background-color: var(--third-bg-color);
+            margin-right: 10px;
         }
 
         .post-button:hover {
             background-color: #4ebbce;
-            transition: 0.2s;
+            box-shadow: 0 0 0 1px #4ebbce;
+            transition: 0.5s;
         }
     }
 
-    @media screen and (max-width: 1149px){
+    @media screen and (max-width: 1149px) {
 
-        .navbar-right-part{
+        .navbar-right-part {
             justify-content: flex-end;
 
-            .vanish-action{
-                display:none;
+            .vanish-action {
+                display: none;
             }
 
-            .connexion-button{
+            .connexion-button {
                 width: 36px;
             }
-    
-            .post-button{
+
+            .post-button {
                 width: 36px;
                 margin-right: 10px;
             }
 
-            input{
+            input {
                 width: 100%;
             }
         }

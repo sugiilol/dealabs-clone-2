@@ -1,8 +1,9 @@
 import "./Navbar.scss"
 import logo from "./img/logo.png"
+import MenuPromo from "../MenuPromo/MenuPromo"
+import { useEffect, useRef } from "react"
 
 export default function Navbar() {
-
 
     return (
         <>
@@ -14,7 +15,8 @@ export default function Navbar() {
                     </ul>
                     <ul className="vanish-appear-list">
                         <li><a href="#"><span className="navbar-first-item">Bons plans</span></a></li>
-                        <li><button>Codes promo<span className="material-symbols-outlined">expand_more</span></button></li>
+                        {/* <li><button onClick={displayPromoMenu}>Codes promo<span className="material-symbols-outlined">expand_more</span></button></li> */}
+                        <MenuPromo />
                         <li><a href="#">Gratuit</a></li>
                         <li><a href="#">Discussions</a></li>
                         <li><button>Plus<span className="material-symbols-outlined">expand_more</span></button></li>

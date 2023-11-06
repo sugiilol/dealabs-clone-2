@@ -1,3 +1,18 @@
 #root {
     font-family: var(--main-font-family);
 }
+
+.navbar-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar-desktop-tablet {
+        display: none;
+    }
+
+    .navbar-mobile {
+    display: block;
+}
+}
