@@ -26,10 +26,6 @@
         justify-content: flex-end;
         width: 100%;
 
-        .material-symbols-outlined {
-            height: 19px;
-        }
-
         .navbar-first-item {
             color: #03a5c1;
         }
@@ -47,7 +43,7 @@
             align-items: center;
             flex-direction: row;
             list-style: none;
-            margin-right: 10%;
+            margin-right: 100px;
             gap: 10px;
             padding-left: 10px;
 
@@ -84,6 +80,8 @@
             display: none;
         }
 
+
+
         @media screen and (max-width: 1023px) {
 
             .vanish-appear-menu {
@@ -102,6 +100,17 @@
         }
 
     }
+
+    @media screen and (max-width: 1246px) {
+
+        .navbar-left-part {
+
+            ul {
+                margin-right: 20px;
+            }
+        }
+    }
+
 
     @media screen and (max-width: 1023px) {
 

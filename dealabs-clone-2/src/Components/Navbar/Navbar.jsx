@@ -1,7 +1,10 @@
 import "./Navbar.scss"
 import logo from "./img/logo.png"
-import MenuPromo from "../MenuPromo/MenuPromo"
-import { useEffect, useRef } from "react"
+import DropDownMenuCustom from "../DropDownMenuCustom/DropDownMenuCustom"
+import MenuPromoContent from "../MenuPromoContent/MenuPromoContent"
+import MenuPlusContent from "../MenuPlusContent/MenuPlusContent"
+import ModalCustom from "../ModalCustom/ModalCustom"
+import ConnexionModalContent from "../ConnexionModalContent/ConnexionModalContent"
 
 export default function Navbar() {
 
@@ -15,11 +18,11 @@ export default function Navbar() {
                     </ul>
                     <ul className="vanish-appear-list">
                         <li><a href="#"><span className="navbar-first-item">Bons plans</span></a></li>
-                        {/* <li><button onClick={displayPromoMenu}>Codes promo<span className="material-symbols-outlined">expand_more</span></button></li> */}
-                        <MenuPromo />
+                        <DropDownMenuCustom name="Codes promo" content={<MenuPromoContent />} />
                         <li><a href="#">Gratuit</a></li>
                         <li><a href="#">Discussions</a></li>
-                        <li><button>Plus<span className="material-symbols-outlined">expand_more</span></button></li>
+                        {/* <li><button>Plus<span className="material-symbols-outlined">expand_more</span></button></li> */}
+                        <DropDownMenuCustom name="Plus" content={<MenuPlusContent />} />
                     </ul>
                 </div>
                 <div className="navbar-right-part">
@@ -27,8 +30,8 @@ export default function Navbar() {
                         <span className="material-symbols-outlined navbar-search-icon">search</span>
                         <input type="text" placeholder="Recherche..." />
                     </div>
-                    <button className="connexion-button"><span className="material-symbols-outlined">person</span><span className="vanish-action">Connexion</span></button>
-                    <button className="post-button"><span className="material-symbols-outlined">add</span><span className="vanish-action">Poster...</span></button>
+                    <ModalCustom class="connexion-button" name="Connexion" icon="person" content={<ConnexionModalContent />}/>
+                    <ModalCustom class="post-button" name="Poster..." icon="add" content={<ConnexionModalContent />}/>
                 </div>
             </div>
         </>

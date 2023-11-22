@@ -1,0 +1,32 @@
+.dropdown-menu {
+
+    .scrim {
+        position: absolute;
+        top: 3.5em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .icon {
+        transition: all linear 0.4s;
+        height: 19px;
+    }
+
+    &--opened {
+        .icon {
+            transform: rotate(-180deg);
+        }
+
+        .dropdown-menu__container {
+            display: block;
+        }
+    }
+
+    &__container {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+}
