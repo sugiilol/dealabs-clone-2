@@ -25,7 +25,7 @@ export default function ConnexionModalContent() {
                 <div className="modal-connexion-right-part-top">
                     <button className="button-closed-modal"><span className="material-symbols-outlined">close</span></button>
                 </div>
-                <div>
+                <div className="modal-connexion-right-middle-part">
                     <ul>
                         <li><h2>Connectez-vous via un réseau social</h2></li>
                         <li><a href="#"><img src={logoFacebook} alt="logo Facebook" /><span>Connexion via Facebook</span></a></li>
@@ -33,19 +33,19 @@ export default function ConnexionModalContent() {
                         <li><a href="#"><img src={logoApple} alt="logo Apple" /><span>Connexion via Apple</span></a></li>
                     </ul>
                 </div>
-                <div>
+                <div className="modal-connexion-right-part-bottom">
                     <ul>
                         <li><h2>Connexion</h2></li>
                         <li>
                             <label>Pseudo ou e-mail</label>
-                            <input type="text" />
+                            <input type="text" className="modal-input-email-pass" placeholder="gandalfleblanc@example.com"/>
                         </li>
                         <li>
-                            <label>Mot de pass</label>
-                            <input type="pass" />
+                            <label>Mot de passe</label>
+                            <input type="pass" className="modal-input-email-pass"/>
                         </li>
-                        <li>
-                            <input type="checkbox" name="remember" id="login-remember"/>Rester connecté(e) sur cet appareil
+                        <li className="modal-connexion-checkbox">
+                            <input type="checkbox" name="remember" id="login-remember" /><span>Rester connecté(e) sur cet appareil</span>
                         </li>
                         <li>
                             <button>Connexion</button>
