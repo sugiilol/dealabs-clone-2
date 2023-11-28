@@ -14,7 +14,7 @@ export default function Navbar() {
                 <div className="navbar-left-part">
                     <a href="#"><img src={logo} alt="Dealabs-logo" /></a>
                     <ul className="vanish-appear-menu">
-                        <button>Menu<span className="material-symbols-outlined">expand_more</span></button>
+                        <DropDownMenuCustom name="Plus" content={<MenuPlusContent />} />
                     </ul>
                     <ul className="vanish-appear-list">
                         <li><a href="#"><span className="navbar-first-item">Bons plans</span></a></li>
