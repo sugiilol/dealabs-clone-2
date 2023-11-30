@@ -68,6 +68,8 @@
                 background-color: #f6f7f9;
                 color: rgb(97, 97, 97);
                 width: 100%;
+                font-family: var(--main-font-family-bold);
+                font-size: 0.875rem;
             }
 
             button:hover {
@@ -102,6 +104,10 @@
             .button-closed-modal {
                 background-color: white;
                 color: black;
+
+                span{
+                    color: black;
+                }
             }
         }
 
@@ -214,6 +220,10 @@
                 margin-top: 50px;
                 background-color: rgb(3, 165, 193);
                 transition: 0.5s;
+                width: 100%;
+                color: white;
+                font-family: var(--main-font-family-bold);
+                font-size: 0.875rem;
             }
 
             button:hover {
