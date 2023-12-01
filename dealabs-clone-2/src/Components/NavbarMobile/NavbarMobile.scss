@@ -7,6 +7,10 @@
     width: 100%;
     background-color: var(--primary-navbar-color);
 
+    .blu{
+        background-color: red!important;
+    }
+
     button {
         display: flex;
         justify-content: center;
