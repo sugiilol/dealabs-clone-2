@@ -1,0 +1,73 @@
+.burger-menu-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1f20;
+    color:white;
+    font-size: 14px;
+    font-family: var(--main-font-family-bold);
+    margin-top: -4px;
+    margin-left: -8px;
+    padding: 10px;
+
+    &-button{
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: 0.5s;
+    }
+
+    &-button:hover{
+        background-color: rgb(88, 88, 88);
+    }
+
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap:5px;
+        padding: 0;
+        text-decoration: none; 
+        color: white; 
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    &_first-part{
+
+        .good-deal-link{
+            background-color: grey;
+            border-radius: 20px;
+            padding-left: 6px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 110px;
+        }
+
+        .blue-span{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #03a5c1;
+            border-radius: 20px;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-left: 5px;
+        }
+
+        li{
+            margin-top: 5px;           
+        }
+    }
+}

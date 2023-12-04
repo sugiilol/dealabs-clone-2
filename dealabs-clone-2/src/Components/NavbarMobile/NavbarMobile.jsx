@@ -2,8 +2,8 @@ import "./NavbarMobile.scss"
 import logo from "./img/logo.png"
 import ModalCustom from "../ModalCustom/ModalCustom"
 import ConnexionModalContent from "../ConnexionModalContent/ConnexionModalContent"
-import DropDownMenuCustom from "../DropDownMenuCustom/DropDownMenuCustom"
-import MenuPromoContent from "../MenuPromoContent/MenuPromoContent"
+import BurgerMenu from "../BurgerMenu/BurgerMenu"
+import BurgerMenuContent from "../BurgerMenuContent/BurgerMenuContent"
 
 
 export default function NavbarMobile(){
@@ -13,7 +13,8 @@ export default function NavbarMobile(){
         <>
             <div className="navbar-container-mobile">
                 <div className="navbar-mobile-left-part">
-                    <button className="burger-menu-button"><span className="material-symbols-outlined">menu</span></button>
+                    {/* <button className="burger-menu-button"><span className="material-symbols-outlined">menu</span></button> */}
+                    <BurgerMenu class="burger-menu-button" content={<BurgerMenuContent />}/>
                     <ModalCustom class="post-button" icon="add" content={<ConnexionModalContent />}/>
                 </div>
                 <div className="navbar-mobile-center-part">

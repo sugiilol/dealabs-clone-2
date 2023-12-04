@@ -17,9 +17,7 @@ export default function MenuPromo(props) {
 
             {isOpen &&
                 (
-                    <div className='scrim' onClick={() => setIsOpen(false)}>
-
-                    </div>
+                    <div className='scrim' onClick={() => setIsOpen(false)}></div>
                 )
             }
             <div className='dropdown-menu__container'>
