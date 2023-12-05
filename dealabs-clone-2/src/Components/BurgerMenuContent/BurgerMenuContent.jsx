@@ -1,6 +1,18 @@
 import './BurgerMenuContent.scss'
 
 export default function BurgerMenuContent() {
+
+    const categoriesList = [
+        ["High-Tech", "Epicerie & Courses", "Santé & Cosmétiques", "Maison & Habitat", "Auto-Moto", "Sport & Plein air", "Finances & Assurances", "Voyages"],
+        ["Consoles & Jeux vidéo", "Mode & Accessoires", "Famille & Enfants", "Jardin & Bricolage", "Culture & Divertissement", "Forfait Mobiles et internet", "Services"]
+    ]     
+    
+    const brandsList = [
+        ["AliExpress", "Cdiscount", "Nike", "Intersport", "Samsung", "Conforama", "Norauto", "Booking.com"],
+        ["Amazon", "Zalando", "Carrefour", "Blancheporte", "Fnac", "Decathlon", "Courir", "Lastminute"]
+    ]
+    
+
     return (
         <div className='burger-menu-content'>
             <div className='burger-menu-content_first-part'>
@@ -12,11 +24,36 @@ export default function BurgerMenuContent() {
                 </ul>
             </div>
             <div className='burger-menu-content_second-part'>
-                <div></div>
-                <div></div>
+                <a href="#" className='burger-menu-content-button'><span className="material-symbols-outlined">Folder</span>Toutes les catégories</a>
+                <div className='second-part-categories-list'>
+                    {categoriesList.map((list, indexList) => {
+                        return(
+                            <ul key={indexList}>
+                                {list.map((categorie, indexCategorie) =>{
+                                    return(
+                                        <li key={indexCategorie}><a href="#">{categorie}</a></li>
+                                    )
+                                })}
+                            </ul>
+                        )                    
+                    })}
+                </div>
             </div>
             <div className='burger-menu-content_third-part'>
-
+            <a href="#" className='burger-menu-content-button'><span className="material-symbols-outlined">cut</span>Codes promo</a>
+                <div className='second-part-categories-list'>
+                    {brandsList.map((list, indexList) => {
+                        return(
+                            <ul key={indexList}>
+                                {list.map((brand, indexBrand) =>{
+                                    return(
+                                        <li key={indexBrand}><a href="#">{brand}</a></li>
+                                    )
+                                })}
+                            </ul>
+                        )                    
+                    })}
+                </div>
             </div>
             <div className='burger-menu-content_fourth-part'>
 
