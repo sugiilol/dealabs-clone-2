@@ -56,10 +56,14 @@ export default function BurgerMenuContent() {
                 </div>
             </div>
             <div className='burger-menu-content_fourth-part'>
-
+                <div className='title-event'>
+                     <span className="material-symbols-outlined star-color">star</span><span>Évenements</span>
+                </div>
+                <a href="#">Les dépenses du quotidien</a>
             </div>
             <div className='burger-menu-content_fifth-part'>
-
+                <li className='burger-menu-content-button'><a href="#"><span className="material-symbols-outlined">developer_guide</span>Guide d'achat</a></li>
+                <li className='burger-menu-content-button'><a href="#"><span className="material-symbols-outlined">tv_options_edit_channels</span>Sondages</a></li>
             </div>
         </div>
     )
