@@ -1,0 +1,40 @@
+.breadCrumb-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    background-color: #1d1f20;
+    color : #fff;
+    padding-left: 15%;
+    font-size: 0.8em;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+
+    li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap:7px;
+
+        span{
+            color:rgb(105, 105, 105);
+            font-size: 1.1em;
+            height: 10px;
+        }
+    }
+
+    a{  
+        color:#fff;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}

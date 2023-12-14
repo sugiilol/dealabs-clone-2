@@ -18,8 +18,8 @@ export default function ModalCustom(props) {
                 <span className="material-symbols-outlined">{props.icon}</span>
                 <span className="vanish-action">{props.name}</span>
             </button>
-            <div className={modalClassList.join(" ")} onClick={() => closeOrOpenModal()}>
-                {props.content}
+            <div className={modalClassList.join(" ")} onClick={() => closeOrOpenModal()}>              
+                {props.content}                           
             </div>
         </>
     )
